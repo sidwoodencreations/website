@@ -1,0 +1,9 @@
+services:
+  ubuntu-container:
+    build:
+      context: .
+      dockerfile: ./tools/Dockerfile
+    volumes:
+      - ./:/app
+    tty: true
+    stdin_open: true
