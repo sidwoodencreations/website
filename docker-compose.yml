@@ -4,6 +4,8 @@ services:
       context: .
       dockerfile: ./tools/Dockerfile
     volumes:
-      - ./:/app
+      - ./Terraform:/app/Terraform
     tty: true
     stdin_open: true
+  
+  
